@@ -6,5 +6,5 @@ class ScriptConnection{
     public:
         void (*_connections[5])();
 
-        ScriptConnection(void (*callback)()){};
+        ScriptConnection(void (*callback)());
 };
