@@ -5,13 +5,9 @@
 
 class Vector3{
     public:
-        float X;
-        float Y;
-        float Z;
+        float X, Y, Z, Magnitude;
 
-        float Magnitude;
+        Vector3 *UnitVector;
 
         Vector3(float _x, float _y,float _z);
-
-        Vector3 GetUnitVector();
 };
