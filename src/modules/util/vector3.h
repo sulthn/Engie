@@ -3,11 +3,12 @@
 
 // sinetric
 
-class Vector3{
-    public:
-        float X, Y, Z, Magnitude;
+struct Vector3 {
+    float X, Y, Z;
 
-        Vector3 *UnitVector;
+    Vector3(float x, float y, float z);
 
-        Vector3(float _x, float _y,float _z);
+    float GetMagnitude();
+
+    Vector3 GetUnitVector();
 };

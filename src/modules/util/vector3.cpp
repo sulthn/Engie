@@ -2,10 +2,15 @@
 
 // sinetric
 
-Vector3::Vector3(float _x, float _y, float _z): X(_x), Y(_y), Z(_z), Magnitude(sqrt(pow(X, 2) + pow(Y, 2) + pow(Z, 2))) {
-    if (Magnitude != 1.0){
-        Vector3 _unitVector(X/Magnitude, Y/Magnitude, Z/Magnitude);
+Vector3::Vector3(float x, float y, float z) : X(x), Y(y), Z(z) {};
 
-        UnitVector = &_unitVector;
-    };
+float Vector3::GetMagnitude()
+{
+    return (sqrt(pow(X, 2) + pow(Y, 2) + pow(Z, 2)));
+};
+
+Vector3 Vector3::GetUnitVector() {
+    float _magn = this->GetMagnitude();
+
+    return Vector3(this->X/_magn, this->Y/_magn, this->Z/_magn);
 };
