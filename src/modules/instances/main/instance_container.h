@@ -4,6 +4,7 @@
 #define INSTANCECONTAINER_H
 
 #include "../../util/data_container.h"
+#include <algorithm>
 
 // Instance class
 
@@ -27,8 +28,8 @@ class InstanceContainer : public DataContainerClass<Instance*> {
     public:
         using DataContainerClass<Instance*>::FillContainer;
 
-        void FillContainer(Instance* value) override;
-        std::vector<Instance*> GetContents() override;
+        void FillContainer(Instance* value);
+        std::vector<Instance*> GetContents();
         
         int GetIndexOfInstanceId(Instance* InstanceId);
 };

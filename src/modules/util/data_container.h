@@ -10,9 +10,8 @@
 template <typename T> class DataContainerClass {
     protected:
         std::vector<T> DataContainer;
-    //public:
-        virtual void FillContainer(T value);
-        virtual std::vector<T> GetContents();
+        void FillContainer(T value);
+        std::vector<T> GetContents();
 };
 
 #endif
