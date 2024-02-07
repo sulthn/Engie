@@ -5,7 +5,7 @@ TARGET := Engie
 BUILD_DIR := build
 SRC_DIR := src
 
-SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/*/*.cpp $(SRC_DIR)/*/*/*.cpp)
+SRCS := $(wildcard $(SRC_DIR)/*.cpp $(SRC_DIR)/*/*.cpp $(SRC_DIR)/*/*/*.cpp $(SRC_DIR)/*/*/*/*.cpp)
 OBJS := $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRCS))
 
 all: $(BUILD_DIR) $(TARGET)
