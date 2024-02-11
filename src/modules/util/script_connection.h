@@ -1,3 +1,8 @@
+#pragma once
+
+#ifndef SCRIPTCONNECTION_H
+#define SCRIPTCONNECTION_H
+
 #include <iostream>
 #include <vector>
 #include <functional>
@@ -10,7 +15,9 @@ class ScriptConnection{
 
         void Connect(void (*callback)());
 
-        template <class T> void Fire(std::vector <T>);
+        void Fire();
     private:
         std::vector <void (*)()> _connections;
 };
+
+#endif

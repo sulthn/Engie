@@ -1,3 +1,8 @@
+#pragma once
+
+#ifndef VECTOR3_H
+#define VECTOR3_H
+
 #include <iostream>
 #include <math.h>
 
@@ -12,3 +17,5 @@ struct Vector3 {
 
     Vector3 GetUnitVector();
 };
+
+#endif

@@ -5,6 +5,7 @@ InstanceContainer instanceContainer;
 // Instance class
 
 Instance::Instance(std::string ClassName, std::string Name): memory_address(reinterpret_cast<Instance*>(this)) {
+    std::cout << "Storing " << memory_address << " into InstanceContainer" << std::endl;
     instanceContainer.FillContainer(memory_address); // store the memory address of the instance into the global instance list
 };
 
