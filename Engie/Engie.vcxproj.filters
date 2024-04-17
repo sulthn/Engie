@@ -56,4 +56,7 @@
       <Filter>Resource Files</Filter>
     </Object>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.MD" />
+  </ItemGroup>
 </Project>
